@@ -3,6 +3,9 @@ Zed plugin to insert 42 header
 
 > ⚠️ **Warning:** This code was written by an A.I. with the goal of replicating the original vim script.
 
+## Prerequisites
+Before you begin, ensure you have [Rust and Cargo](https://rustup.rs/) installed on your system to compile the binary.
+
 ## Installation
 
 ### 1. Configure user
