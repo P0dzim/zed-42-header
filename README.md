@@ -44,14 +44,16 @@ const EMAIL: &str = "E-MAIL@42.fr";
 	{
 		"context": "Editor",
 		"bindings": {
+			"ctrl-alt-shift-cmd-s": "workspace::Save",
 			"ctrl-alt-h": [
 				"task::Spawn",
 				{ "task_name": "42 Header: Insert or Update" },
 			],
-			// Mapeamos o F1 e C-c h para: Salvar -> Acionar o atalho da Task
-			// NOTA: Se você usa Linux, troque "cmd-s" por "ctrl-s"
-			"f1": ["workspace::SendKeystrokes", "cmd-s ctrl-alt-h"],
-			"ctrl-c h": ["workspace::SendKeystrokes", "cmd-s ctrl-alt-h"],
+			"f1": ["workspace::SendKeystrokes", "ctrl-alt-shift-cmd-s ctrl-alt-h"],
+			"ctrl-c h": [
+				"workspace::SendKeystrokes",
+				"ctrl-alt-shift-cmd-s ctrl-alt-h",
+			],
 		},
 	},
 ]
